@@ -9,7 +9,7 @@ Open and view the Project - [`Kickstarter`](https://bit.ly/ShreyaBlog)
   - [Installation](##Installation)
 * [Development](#Development)
 * [Features](#Features)
-* [Running the App](#Running the App)
+* [Running the App](#Running-the-App)
 
 # Getting Started
 This project is a part of `Udacity's Refreshed Front-End Nanodegree program`.
@@ -30,7 +30,6 @@ Footer with social media links
 Create css directory with the following files:
 `main.css` with the global styling
 Component Specific CSS
-
 `grid.css`
 `list.css`
 `card.css`
@@ -39,7 +38,7 @@ Component Specific CSS
 
 Import all the modularized css files to `css/main.css`
 
-Create `js` directory with the following file:
+Create js directory with the following file:
 
 `app.js` for adding navbar active toggle button functionality and to open and close blog posts.
 
