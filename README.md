@@ -28,12 +28,19 @@ Basic page content
 Footer with social media links
 
 Create css directory with the following files:
+
 `main.css` with the global styling
+
 Component Specific CSS
+
 `grid.css`
+
 `list.css`
+
 `card.css`
+
 `share.css`
+
 `blog.css`
 
 Import all the modularized css files to `css/main.css`
