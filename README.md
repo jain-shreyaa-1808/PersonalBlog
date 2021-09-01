@@ -3,13 +3,13 @@ A website built using HTML and CSS skills which includes custom images, layout, 
 
 Open and view the Project - [Kickstarter](https://bit.ly/ShreyaBlog)
 
-#Table of Contents
+# Table of Contents
 *[Getting Started](#Getting-Started)
-  **Tools Required
+**Tools Required
   Installation**
-*Development
-*Features
-*Running the App
-*References
+* Development
+* Features
+* Running the App
+* References
 
-#Getting Started
+# Getting Started
