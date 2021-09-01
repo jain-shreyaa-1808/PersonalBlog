@@ -1,0 +1,50 @@
+.fab
+{
+    padding: 10px 0px;
+    font-size: 20px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    margin: 20px 5px;
+
+}
+.fab:hover
+{
+    opacity:0.5
+}
+  
+.fa-instagram 
+{
+    background: #3B5998;
+    color: white;
+}
+  
+.fa-hackerrank 
+{
+    background:black;
+    color: white;
+}
+
+.fa-linkedin 
+{
+    background: #007bb5;
+    color: white;
+}
+
+.fa-github 
+{
+    background: black;
+    color: white;
+}
+
+.social 
+{
+
+ position: absolute;    
+ left: 50%;
+ transform: translate(-50%);
+}
+.social a{
+    float: left;
+    top: 0;
+}

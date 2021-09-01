@@ -1,0 +1,72 @@
+ @import "card.css";
+.container
+{
+        display: grid;
+        grid-template-columns: 150px 200px;
+        grid-template-rows: 100px 45px 1fr 100px;
+        grid-template-areas: 
+        "hd hd hd hd hd hd hd hd"
+        "sd sd sd sd sd sd sd sd"
+        "main main main main main main main main"
+        "ft ft ft ft ft ft ft ft";
+ 
+}
+
+.box
+{
+	display:flex;
+      margin:0;
+}
+
+#header
+{
+      grid-area:hd; 
+      font-family:Georgia, 'Times New Roman', Times, serif;
+      font-style: italic;
+      color:white;
+      background-color: rosybrown;
+      top: 0;
+      text-align: center;
+
+}
+
+#navigation
+{
+      grid-area:sd;
+      top:0;
+      position: sticky;
+      overflow: hidden;
+}
+
+
+#content
+{
+      grid-area: main;
+}
+
+
+#footer
+{
+      grid-area:ft;
+      background-color: lightgrey;
+}
+#header>p
+{
+      width: 100%;
+      text-align: center;
+      font-size: 30px;
+      padding: 10px 14px;
+}
+
+.card 
+{
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      transition: 0.3s;
+      width: 320px;
+      text-align: left;
+
+}
+#profile
+{
+      display: none;
+}

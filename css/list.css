@@ -1,0 +1,59 @@
+
+/* @media only screen and (max-width: 558px) {
+.navigate a
+{
+    width:100px;
+}
+} */
+.navigate
+{
+    width: 100%;
+    /* overflow: hidden; */
+    position: relative,sticky;
+    background-color: rgb(17, 17, 17) ;
+}
+.navigate a{
+    list-style-type: none;
+    padding: 16px 14px;
+    color:white;
+    text-decoration: none;
+    text-align: center;
+    float: left;
+    /* width: 120px; */
+    font-size:18px;
+    
+}
+.navigate-right
+{
+    float: right;
+    
+}
+.navigate a.active
+{    
+    background-color: #c5d5cb ;
+    color: black;
+}
+
+.navigate a:hover
+{
+      background: #9fa8a3;
+      color: black;
+     font-weight:bold;
+ }
+i{
+    margin-left: 10px;
+    /* margin-right: 10px; */
+}
+@media only screen and (max-width:530px)
+{
+   .navigate a{
+       font-size: 16px;
+       
+   }
+   .navigate-right
+{
+    float: left;
+    
+}
+}
+

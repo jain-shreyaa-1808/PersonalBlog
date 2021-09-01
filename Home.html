@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+            <meta charset="UTF-8">
+            <meta name="viewport"  content="width=device-width, initial-scale = 1.0"/>
+            <meta name="apple-mobile-web-app-capable" content="yes" />
+            <title>Blogs by Shreya</title>
+            <link rel="icon" href="css/home.jpeg" type="image/jpeg" sizes="20x20">
+            <link href="css/main.css" rel="stylesheet" type="text/css">
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <style>
+        #more,#more1 {display: none;}
+    </style>
+    </head>
+    <body>
+            
+            <div class="container">
+                <div class="box" id="header">
+                    <p>Kickstarter<br><span style="text-align: center;position:justify;font-size: 20px;margin-top: 40px;width:100% ;">Thank you for stoping by!!</span></p>
+                </div>
+
+                <div class="box" id="navigation">
+                            <div class="navigate">
+                                    <a class="listitem active" href="home.html"><i class="fa fa-home " aria-hidden="true"></i>&nbsp;Home</a>
+                                    <a class="listitem" href="#blog1"><i class="fa fa-blog " aria-hidden="true"></i>&nbsp;Blog</a>
+                                    <a class="listitem" href="html/blog.html"><i class="fa fa-info-circle " aria-hidden="true"></i>&nbsp;About</a>
+                                <div class="navigate-right">
+                                    <a class="listitem" href="#profile" onclick="showProfile()"><i class="fa fa-user-circle" aria-hidden="true"></i>&nbsp;Profile</a>
+                                </div>
+                            </div>
+                </div>
+
+                <div class="box" id="content" >
+                        
+                                
+                        <section>
+                        <div class="blog">
+                                <div class="card">
+                                    
+                                        
+                                        <div class="contain">
+                                            <img src="css/img_avatar.jpg" alt="Avatar" class="center">
+                                            <h2><b><br>Shreya Jain</b></h2>  
+                                            <button style="margin: 15px 0px;" onclick="showProfile()"><a href="#profile" >See Profile</a></button>
+                                        
+                                        </div>
+                                
+                                </div>
+                                
+                            
+                                <div id="blog1">
+                                    <div class="card">
+                                        <div class="blog1">
+                                                <h2>What is Recursion?</h2>
+                                                
+                                                    <article>
+                                                            <p style="white-space:pre-wrap;line-height: 1.8;">
+
+Recursion is when a function calls itself again and again.
+The concept of function in computer programming and maths can be linked as follows:
+For example :   
+This can be written in Java as:
+        public static void  Fun(int x)
+{
+return x*x;
+}
+When we compute a function  we generally do it as  which is equal to 4<span id="dots" style="font-weight: bold;font-size: large;"><b>........</b></span> <span id="more">
+The same work is done when we invoke the function Fun(2) it returns 4
+
+The concept of recursion can be related with the mathematical cocept of Principle of Mathematical Induction(PMI)
+Let us see a problem to brush up the concept of PMI
+
+We perform three steps i.e.
+Step 1 : Prove it for n=1
+Step 2 : Assume it holds true for n=k
+Step 3 : Prove it for n=k+1
+
+Solving the problem:
+Step 1:
+When n=1 
+LHS  =  1
+RHS  =    =1
+LHS=RHS
+Step 2:
+    Assuming it holds true for n=k
+LHS=1+2+…….+K
+RHS =    
+Assuming LHS = RHS
+1+2+3+……..+k =                                  ..(i)
+Step 3 : Proving it for n=k+1
+    LHS=1+2+…….(K+1)  , 
+    RHS = K+1((K+1)+1)/2 
+    From eqn (i)
+    LHS = K(K+1)/2 +(K+1)
+        = K(K+1)+2(K+1) / 2
+        = K+1(K+2) / 2
+        = K+1((K+1)+1) / 2
+    LHS=RHS 
+
+Hence, proved for  n=k+1
+Here we proved for n=k+1 using n=k
+Similarly using 1 we can prove for 2 
+1->2->3->4->5……….->k-1->k
+Thus it holds true for all the natural numbers 
+Now we can connect it with recursion 
+We have a function that prints number from n to 1
+For example f(5)=5 4 3 2 1
+From here we can divide this into 3 parts
+This is High level Thiking
+1)Expectation
+2)Faith
+3)Linking expectation and Faith
+1) We expect the function to print numbers from n to 1
+2) We have faith that the function knows to print numbers upto n-1
+Example:                                                                 
+Expectation                                                   Faith
+PrintDecreasing(5)			      PrintDecreasing(4)
+5					      4
+4					      3
+3					      2
+2					      1
+1
+Now we will be linking expectation and Faith as per high level thinking
+Now if PrintDecreasing print 5 and PrintDecreasing(4) knows to print 4 3 2 1
+PrintDecreasing can print only 5 and call PrintDecreasing(4) to print other numbers
+
+
+So we can write the function as
+public static void PrintDecreasing(int n)
+{
+System.out.println(n);
+PrintDecreasing(n-1);
+}
+
+
+This was all about high level thinking now we will go into the depth and see how the function is working which is known as low level thinking.
+
+We will create a stack for this, firstly any program starts execution from main so main gets into the stack first when we call the function PrintDecreasing from the main then   PrintDecreasing gets into the stack.
+
+PrintDecreasing(5)
+
+Main Function
+
+Now when the PrintDecreasing starts running it first prints 5 and then it calls PrintDecreasing(4) then it prints 4 and calls PrintDecreasing(3) then prints 3 and so on it goes on an becomes infinite so we need to stop this function .
+
+
+PrintDecreasing(-1)
+
+PrintDecreasing(0)
+
+PrintDecreasing(1)
+
+PrintDecreasing(2)
+
+PrintDecreasing(3)
+
+PrintDecreasing(4)
+
+PrintDecreasing(5)
+
+Main Function
+
+Now to stop this function from running infinitely we need to put a condition to stop it so our program becomes:
+public static void main(String args[]) throws Exception
+{
+Scanner scn=new Scanner(System.in);
+int n=sc.nextInt();
+PrintDeacreasing(n);
+}
+public static void PrintDecreasing(int n)
+{
+if(n==0)
+{
+    return;
+}
+System.out.println(n);
+PrintDecreasing(n-1);
+}
+Here return means wipe out from the stack when n becomes 0 the stack starts popping out elements.
+
+PrintDecreasing(0)
+
+PrintDecreasing(1)
+
+PrintDecreasing(2)
+
+PrintDecreasing(3)
+
+PrintDecreasing(4)
+
+PrintDecreasing(5)
+
+Main Function
+
+1
+
+2
+
+3
+
+4
+
+5
+
+Now One by one the eleemnts are removed from the stack and stack becomes empty and we get the desired result that gets printed on function call with different values.
+Now the output we get is 
+Output:
+    5	
+    4
+    3
+    2
+    1
+    </span><a onclick="myFunction(this.id,'more','dots')" id="myBtn" style="cursor: pointer;font-size: large;font-weight: bold;">Read more</a>
+                                                </p>
+                                        </article>
+                                        
+                                        <button><a href="html/blog.html" target="_blank">Blog Post</a></button>
+                                    
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            
+                       
+                            
+                            <div class="card">
+                                    
+                                    <div class="blog2">
+                                           
+                                            <h3>TOWER OF HANOI</h3>
+                                            <div class="contain">
+                                               
+                                                <article>
+                                                    <p style="white-space: pre-wrap;line-height: 1.8;">
+        Using High level thinking we can understand Tower of Hanoi
+        So Basically there are three discs and three towers name A, B and C respectively. All the three discs are in tower a initially we need to shift the three discs to Tower B using the Tower C.
+
+        So as the the high level thinking follows three steps i.e. Expectation,Faith and linking of Expectation and faith.<span id="dots1"><b>........</b></span><span id="more1">
+        The output we expect from our function is to shift the three discs from Tower A to Tower B using the Tower C without violating the three laws.
+        <b>
+        The three laws followed should be:
+        1)Move one disk at a time.
+        2)Never place a smaller disc under a larger disc.
+        3)Move the uppermost disc only.
+        </b>
+        Example:  tah(3,A,B,C)
+        <img id ="toh" src="css/TowerofHanoi.png" style="width:350px;height:200px;"  alt="tower of hanoi" class="center" >
+        Now we establish a Faith , the function knows the instruction for moving two discs from Tower A to Tower B using the Tower C , tah(2,A,B,C) 
+
+        <i>......to be continued</i>
+    </span> <a onclick="myFunction(this.id,'more1','dots1')" id="myBtn1" style="cursor: pointer;font-size: large;font-weight: bold;">Read more</a>
+                                                    </p>
+                                                
+                                                </article>
+                                        
+                                            </div>
+                                   
+                                    </div>
+                            
+                            </div>
+                    </div>
+                    <div id="profile">
+                        <img src="css/ShreyaJain.jpg" alt="Profile" style="width: 80%;margin-left: 10%;">
+                    </div>
+                </section>    
+                
+                    
+                
+                </div>
+                <div class="box" id="footer">
+                    <div class="social">
+
+                        <a href="#" onclick="location.href='https://www.instagram.com/shreyajain1808/';" target="_blank" class="fab fa-instagram fa-lg"></a>
+                        <a href="#" onclick="location.href='https://www.hackerrank.com/jainshreya232';" target="_blank" class="fab fa-hackerrank fa-lg"></a>
+                        <a href="#" onclick="location.href='https://www.linkedin.com/in/-shreya-jain-/';" target="_blank" class="fab fa-linkedin fa-lg"></a>	
+                        <a href="#" onclick="location.href='https://github.com/shreyajain1808';" target="_blank" class="fab fa-github fa-lg"></a>
+                    
+                    </div>
+                </div>    
+            </div>   
+        <script src="js/app.js"></script>
+    </body>
+</html> 
