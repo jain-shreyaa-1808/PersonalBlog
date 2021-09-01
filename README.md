@@ -8,9 +8,8 @@ Open and view the Project - [`Kickstarter`](https://bit.ly/ShreyaBlog)
   - [Tools Required](##Tools-Required)
   - [Installation](##Installation)
 * [Development](#Development)
-* [Features]
-* [Running the App]
-* [References]
+* [Features](#Features)
+* [Running the App](#Running the App)
 
 # Getting Started
 This project is a part of `Udacity's Refreshed Front-End Nanodegree program`.
@@ -44,3 +43,12 @@ Create `js` directory with the following file:
 
 `app.js` for adding navbar active toggle button functionality and to open and close blog posts.
 
+# Features
+1. `Flexbox` and `Grid` are used .
+2. The Landing page contains the entire content.
+3. The project contains a Home Page, Blog Post , About and Profile Section.
+
+# Running the App
+1. Open the project by downloading the zip file and extract the files.
+ -- Open index.html in the browser of your choice.
+2. Clone the [Github Repository](https://github.com/shreyajain1808/PersonalBlog)
