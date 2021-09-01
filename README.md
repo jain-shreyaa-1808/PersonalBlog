@@ -4,9 +4,9 @@ A website built using HTML and CSS skills which includes custom images, layout, 
 Open and view the Project - [Kickstarter](https://bit.ly/ShreyaBlog)
 
 # Table of Contents
-*[Getting Started](#Getting-Started)
-**Tools Required
-  Installation**
+* [Getting Started](#Getting-Started)
+  + Tools Required
+  + Installation**
 * Development
 * Features
 * Running the App
