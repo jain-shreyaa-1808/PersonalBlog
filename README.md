@@ -57,4 +57,4 @@ Create js directory with the following file:
 # Running the App
 1. Open the project by downloading the zip file and extract the files.
  -- Open index.html in the browser of your choice.
-2. Clone the [Github Repository](https://github.com/shreyajain1808/PersonalBlog)
+2. Clone the [Github Repository](https://github.com/jain-shreyaa/PersonalBlog)
