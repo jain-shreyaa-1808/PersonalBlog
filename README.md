@@ -5,8 +5,8 @@ Open and view the Project - [`Kickstarter`](https://bit.ly/Shreyablog)
 
 # Table of Contents
 * [Getting Started](#Getting-Started)
-  - [Tools Required](## Tools-Required)
-  - [Installation](## Installation)
+  - [Tools Required](##Tools-Required)
+  - [Installation](##Installation)
 * [Development](#Development)
 * [Features](#Features)
 * [Running the App](#Running-the-App)
