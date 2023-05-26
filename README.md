@@ -1,7 +1,7 @@
 # Personal Blog Website
 A website built using `HTML`, `CSS` and `JAVASCRIPT` skills which includes custom images, layout, and styling. Along with the webpage design considerations. The project also focusses on using Flexbox and Grid systems to make the page responsive.
 
-[Open and view the Project]([https://bit.ly/Shreyablog](https://jain-shreyaa-1808.github.io/PersonalBlog/Home.html))
+[Open and view the Project](https://jain-shreyaa-1808.github.io/PersonalBlog/Home.html)
 
 # Table of Contents
 * [Getting Started](#Getting-Started)
